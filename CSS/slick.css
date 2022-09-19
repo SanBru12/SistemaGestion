@@ -1,0 +1,19 @@
+.logo .slick-slide > div {
+    transform: scale(.3);
+    transition: transform .3s cubic-bezier(.4,0,.2,1);
+} 
+.logo .slick-center > div {
+    transform: scale(.5);
+}
+.slider__item > .img-logo {
+    width: 100%;
+    height: auto;
+}
+
+.img-logo{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.slick-center div div .img-logo{
+  filter: grayscale(0%) !important;
+} 

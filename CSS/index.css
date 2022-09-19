@@ -1,0 +1,1292 @@
+:root {
+  /* --colorPrimario: #622483; */
+  --colorPrimario: #ffdd00;
+  /*  --colorSecundario: #ba007c; */
+  --colorSecundario: #f0d212;
+  --colorTerciario: #333333;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+/* *{
+  border: 2px red solid;
+ } */
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  /* color: #fff; */
+  color: black;
+}
+
+link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.texto-header {
+  font-weight: 500;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.logo-goodapps {
+  margin-top: 20px;
+  width: 200px;
+  fill: var(--colorPrimario) !important;
+}
+
+#nuestraPlataforma {
+  background-image: url("../Imagenes/imagen\ de\ fondo\ conoce\ nuestra\ plataforma.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 40em;
+  padding: 30px 30px;
+}
+#sumamos {
+  background-image: url("../Imagenes/imagen\ sumamos.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50em;
+}
+
+#sumamos1 {
+  background-color: rgba(245, 241, 241, 0.24);
+  height: auto;
+  padding: 50px 0px 60px 0px;
+  padding: 00px 0px 30px 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50em;
+}
+
+#Ultimo_cuadrado {
+  background-color: #f0d212;
+  width: 360px;
+}
+
+#titulo {
+  color: var(--colorTerciario);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+}
+#titulo-amarillo {
+  color: var(--colorSecundario);
+  text-transform: uppercase;
+  text-align: center;
+  /* font-size: 48px;
+  margin-bottom: 20px; */
+}
+
+.home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  color: #333333;
+  /* margin-bottom: -20px; */
+}
+
+.card-home {
+  padding: 15% 10%;
+  height: 600px;
+}
+
+.titulo-home {
+  font-size: 3.5rem !important;
+  font-weight: bold !important;
+  font-weight: 550 !important;
+}
+
+.img-header {
+  width: 40%;
+  background-image: url(../Imagenes/imagen\ portada.jpg);
+  /* background-image: url(../imagenes/imagen\ 700\ x\ 700.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prueba {
+  width: 60%;
+  height: 100%;
+  padding: 5rem 10rem;
+}
+/* .sec-home{
+  height: 900px;
+} */
+.img-diseño {
+  width: 800px;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+}
+#card {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--colorSecundario);
+  text-align: initial;
+}
+
+#card1 {
+  width: 360px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--colorSecundario);
+  text-align: initial;
+  grid-area: card1;
+}
+
+/* NOS DIFERENCIA */
+
+.nosDiferencia {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.nosDirefencia-Text {
+  width: 60%;
+  height: 100%;
+  padding: 5rem 10rem;
+}
+
+.nosDiferencia-Parrafos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 10px;
+  margin-left: 30px;
+}
+
+.nosDiferencia-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 20px 50px;
+}
+
+.nosDiferencia-Parrafos img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.nosDiferencia-Img {
+  width: 40%;
+  background-image: url("../Imagenes/imagen\ nos\ diferencia.jpg");
+  /*background-image: url("../imagenes/imagen\ 700\ x\ 700.jpg");*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .card-nosDiferencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.card-nosDiferencia img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+} */
+
+.card-soporte {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px 100px;
+  margin: 150px 50px;
+}
+
+/* NUESTRA PLATAFORMA TIENE */
+
+.circuloText {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 6em;
+}
+
+.titulo-nuestraPlataforma {
+  text-align: end;
+}
+.textCirculos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.textCirculos img {
+  width: 70px;
+  height: 70px;
+  margin: 0px 20px;
+}
+
+.textCirculos p {
+  text-align: end;
+  margin: 40px 0px;
+  font-size: 20px;
+}
+
+.circuloContenedor {
+  width: 100%;
+  height: 90%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+}
+
+.circulos {
+  height: 700px;
+  width: 60%;
+  padding: 0 0 0 0;
+}
+.circulos img {
+  width: 100%;
+  height: 100%;
+}
+
+.circuloUno {
+  width: 600px;
+  height: 600px;
+  background-color: #36a0d7;
+  border-radius: 50%;
+  position: absolute;
+  margin: 10%;
+  opacity: 0.8;
+}
+.circuloDos {
+  width: 200px;
+  height: 200px;
+  background-color: var(--colorPrimario);
+  border-radius: 50%;
+  position: absolute;
+  margin: 5%;
+}
+.circuloImg {
+  width: 500px;
+  height: 500px;
+  background-image: url("https://portalentradas.com.ar/imagenes/imagen\ 600\ x\ 600.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: none;
+  border-radius: 50%;
+  position: absolute;
+  margin: 20%;
+  left: 10%;
+}
+
+.textCirculos .textoUno {
+  margin-top: 20px;
+}
+
+/* FORMULARIO  */
+.formulario-Secc {
+  background-image: url("../Imagenes/imagen\ formulario.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 30px 350px; */
+  color: #fff;
+  height: 750px;
+}
+
+#formulario-Seccc {
+  background-color: rgba(121, 121, 121, 0.548);
+  padding: 5%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.formulario-Secc p {
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+
+.formulario {
+  width: 100%;
+  text-align: start;
+  background-color: var(--gris);
+  /* width: min(45rem, 100%); usa el valor mas pequeño */
+}
+.formulario fieldset {
+  border: none;
+}
+
+.contenedor-campos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50 auto 20rem;
+  column-gap: 20px;
+  padding: 10px 50px;
+}
+/* .campo:nth-child(3),
+  .campo:nth-child(4) {
+    grid-column: 1 / 3;
+  } */
+
+.campo {
+  color: var(--colorText);
+  margin-bottom: 2rem;
+}
+
+.campo label {
+  color: var(--blanco);
+  font-weight: 600;
+  font-size: large;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #fff;
+}
+
+.input-text {
+  height: 50px;
+  width: 100%;
+  border: none;
+  padding: 4px 10px;
+  color: #000000;
+
+  align-items: center;
+}
+
+.boton {
+  width: 250px;
+  height: 50px;
+  background-color: #ffdd00;
+  color: #333333;
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--colorPrimario);
+  box-sizing: border-box;
+  padding: 3% 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enorme-footer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50 auto 20rem;
+  column-gap: 5rem;
+  color: #333333;
+}
+
+.colum h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.colum h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.colum .contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.redes-sociales {
+  display: inline-block;
+  flex-direction: column;
+  margin: 5px 0px;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.redes-sociales a {
+  width: 70px;
+  height: 70px;
+  margin: 5px 5px;
+  color: black;
+}
+.redes-sociales img {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.redesSociales-footer {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+  font-size: 12px;
+}
+.redesSociales-footer p {
+  font-size: 16px;
+}
+
+.ubicacion {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.ubicacion img {
+  width: 40px;
+  height: 40px;
+  margin-right: 17px;
+}
+
+.whatsapp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+.whatsapp img {
+  width: 40px;
+  height: 40px;
+  margin-right: 17px;
+}
+
+.email {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.email img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+#mapaEspecifico {
+  height: 300px;
+  width: 300px;
+  margin-top: 20px;
+  position: relative;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+.mapa p {
+  color: #fff;
+}
+
+.contenido-copy {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 50px;
+}
+
+.copy-text {
+  font-size: 16px;
+}
+.copy-text-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.contenido-copy img {
+  text-align: center;
+  margin-left: 10px;
+  height: 35px;
+}
+#carrusel {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+#carrusel h2 {
+  margin-bottom: 40px;
+  padding: 0px 5px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.center {
+  text-align: center;
+}
+
+.center img {
+  width: 300px;
+  height: auto;
+  margin: 0px 40px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+ul {
+  margin: 0px;
+  padding: 0%;
+}
+
+.one-time {
+  width: 100%;
+  height: 300px;
+}
+.one-time li {
+  width: 100%;
+  height: 300px;
+}
+
+.one-time img {
+  width: 100%;
+  height: 300px;
+}
+.slick-next,
+.slick-arrow::before {
+  display: none;
+}
+
+.margen {
+  margin-left: 10%;
+}
+@media (max-width: 5000px) {
+  .circuloContenedor {
+    width: 100%;
+    height: 1000px;
+  }
+  .circulos {
+    width: 50%;
+    height: 100%;
+    padding: 0 0 0 0;
+  }
+
+  /* .img-header {
+    width: 40%;
+    height: 100%;
+    position: relative;
+  } */
+
+  /* .img-diseño {
+    width: 730px;
+    height: 100%;
+    margin-top: -99px;
+    right: 0px; */
+}
+@media (max-width: 2400px) {
+  .nuestraPlataforma {
+    width: 100%;
+    height: 900px;
+  }
+  .circuloContenedor {
+    width: 100%;
+    height: 700px;
+  }
+}
+
+@media (max-width: 1400px) {
+  /* .home {
+    height: 100%;
+  } */
+
+  /* .img-header {
+    width: 100%;
+    height: 100%;
+ 
+  } */
+  /* .sec-home{
+    height: 900px;
+  } */
+  .img-diseño {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+  }
+
+  #nuestraPlataforma {
+    padding: 10px 0px 30px 0px;
+    height: 100%;
+  }
+
+  .nosDirefencia-Text {
+    width: 60%;
+    height: 100%;
+    padding: 3rem 6rem;
+  }
+
+  .card-home {
+    /* width: 60%; */
+    height: 100%;
+    padding: 4% 10%;
+
+    /* tenia un margen de 6 rem antes */
+  }
+
+  .formulario-Secc {
+    padding: 30px 70px;
+  }
+
+  .one-time {
+    width: 100%;
+    height: 250px;
+  }
+  .one-time li {
+    width: 30%;
+    height: 250px;
+  }
+
+  .one-time img {
+    width: 100%;
+    height: 250px;
+  }
+  /*Moficiacion del optimizar procesos */
+  .circuloText {
+    height: auto;
+    width: 54%;
+    padding: 0px 50px;
+  }
+  .circuloContenedor {
+    height: 450px;
+  }
+  .circuloText h2 {
+    text-align: center;
+  }
+  #formulario-Seccc {
+    background-color: rgba(128, 128, 128, 0.267);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+    margin-top: 50px;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--colorPrimario);
+    box-sizing: border-box;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enorme-footer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 30% 20%;
+    grid-template-rows: 50 auto 20rem;
+    column-gap: 4rem;
+    color: black;
+  }
+  #mapaEspecifico {
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1100px) {
+  .card-home {
+    height: 100%;
+    padding: 3% 8%;
+  }
+  .prueba {
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-home {
+    height: 100%;
+    padding: 3% 6%;
+  }
+}
+
+@media (max-width: 880px) {
+  .prueba {
+    width: 100%;
+  }
+
+  .img-header {
+    width: 100%;
+    height: 900px;
+  }
+
+  #Ultimo_cuadrado {
+    background-color: #f0d212;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  #testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #testimonios .testimonio-img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px;
+  }
+  #testimonios p {
+    text-align: initial;
+    margin: 0px;
+  }
+  #testimonios h6 {
+    width: 100%;
+    text-align: initial;
+    margin-left: 0px;
+  }
+
+  #titulo {
+    font-size: 30px;
+  }
+
+  .home {
+    flex-direction: column;
+    /* height: 100%; */
+  }
+
+  .img-header {
+    width: 100%;
+    height: 700px;
+    padding: 0px 0 80px 0;
+    /* padding: 2rem; */
+  }
+  /* .sec-home{
+    height: 900px;
+  } */
+  .img-diseño {
+    width: 100%;
+    height: 50%;
+    left: 0px;
+  }
+
+  .card-home {
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  .card-home p {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+
+  .sec-home {
+    height: 1400px;
+  }
+
+  #nuestraPlataforma {
+    padding: 10px 0px 30px 0px;
+    height: 100%;
+  }
+  /* NOS DIREFENCIA */
+  .nosDiferencia {
+    flex-direction: column;
+  }
+
+  .nosDirefencia-Text {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+  .nosDiferencia-card {
+    margin: 20px;
+  }
+  .nosDiferencia-Parrafos {
+    margin-left: 10px;
+  }
+  .nosDiferencia-Parrafos img {
+    margin-right: 20px;
+  }
+
+  .nosDiferencia-Img {
+    width: 100%;
+    height: 700px;
+  }
+  /* FIN NOS DIREFENCIA */
+
+  /* SUMAMOS */
+  #sumamos {
+    height: 100%;
+    padding: 0px;
+    background-position: bottom;
+    background-size: auto;
+  }
+
+  /* NUESTRA PLATAFORMA TIENE*/
+  .nuestraPlataformaTiene {
+    height: 1000px;
+    padding: 30px 25px;
+  }
+  .circuloContenedor {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .circuloText {
+    height: auto;
+    width: 100%;
+    padding: 0px 50px;
+  }
+
+  .circuloText h2 {
+    text-align: center;
+  }
+  .textCirculos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .textCirculos p {
+    text-align: initial;
+  }
+
+  .textCirculos img {
+    width: 70px;
+    height: 70px;
+    margin-left: 0px;
+  }
+
+  .circulos {
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+  }
+
+  .circuloUno {
+    width: 60%;
+    height: 120%;
+  }
+  .circuloDos {
+    width: 23%;
+    height: 45%;
+  }
+  .circuloImg {
+    width: 50%;
+    height: 100%;
+  }
+  /* FIN NUESTRA PLATAFORMA TIENE*/
+
+  /* TESTIMONIOS  */
+
+  .testimonios {
+    height: 1200px;
+  }
+
+  #carrusel {
+    padding-top: 30px;
+  }
+
+  /* FORMULARIO  */
+  .formulario-Secc {
+    height: auto;
+    padding: 20px 25px;
+    color: #fff;
+    height: 100%;
+  }
+
+  .formulario {
+    padding: 0px;
+  }
+
+  .formulario-Secc p {
+    margin-top: 0px;
+  }
+
+  .sec-home {
+    margin-bottom: 0px;
+  }
+  .contenedor-campos {
+    display: block;
+  }
+  .card-soporte {
+    display: block;
+  }
+  .sec-0e16 {
+    height: 100%;
+    display: inline;
+  }
+  .one-time {
+    width: 100%;
+    height: 300px;
+  }
+
+  .one-time li {
+    width: 20%;
+    height: 300px;
+  }
+
+  .one-time img {
+    width: 100%;
+    height: 300px;
+  }
+  .footer {
+    display: block;
+    padding: 20px;
+  }
+  .enorme-footer {
+    display: block;
+  }
+
+  .contenido-copy {
+    width: auto;
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    line-height: 2;
+  }
+
+  #sumamos {
+    background-image: url("../Imagenes/imagen\ sumamos.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* height: 81em; */
+  }
+}
+
+@media (max-width: 780px) {
+  #titulo {
+    font-size: 28px;
+  }
+  #carousel_cddb {
+    height: 900px;
+  }
+  .img-header {
+    width: 100%;
+    height: 700px;
+    padding: 0px 0 80px 0;
+  }
+
+  .nuestraPlataformaTiene {
+    height: 850px;
+  }
+  #nuestraPlataforma {
+    position: relative;
+  }
+  #Ultimo_cuadrado {
+    background-color: #f0d212;
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .nosDiferencia-Parrafos {
+    margin-left: 0px;
+  }
+
+  .nosDiferencia-card {
+    margin: 20px 10px;
+  }
+
+  .nosDiferencia-Parrafos img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  .textCirculos img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .circuloText {
+    padding: 0px;
+  }
+
+  .textCirculos p {
+    font-size: 1rem;
+  }
+  /*.one-time {
+        width: 100%;
+        height: 250px;
+    }
+
+        .one-time li {
+            width: 30%;
+            height: 250px;
+        }
+
+        .one-time img {
+            width: 100%;
+            height: 250px;
+        }*/
+
+  .logo {
+    height: auto;
+  }
+  .formulario-Secc p {
+    font-size: 16px;
+  }
+  .one-time {
+    width: 100%;
+    height: 350px;
+  }
+
+  .one-time li {
+    width: 30%;
+    height: 350px;
+  }
+
+  .one-time img {
+    width: 100%;
+    height: 350px;
+  }
+  #sumamos {
+    background-image: url("../Imagenes/imagen\ sumamos.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .nuestraPlataformaTiene {
+    height: 750px;
+  }
+  #carousel_cddb {
+    height: 1000px;
+  }
+
+  #sumamos {
+    background-image: url("../Imagenes/imagen\ sumamos.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80.7em;
+  }
+
+  #sumamos1 {
+    background-color: rgba(245, 241, 241, 0.24);
+    height: auto;
+    padding: 50px 0px 60px 0px;
+    padding: 00px 0px 30px 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80em;
+  }
+}
+
+@media (max-width: 480px) {
+  .nuestraPlataforma {
+    height: 850px;
+  }
+  .nosDirefencia-Text {
+    padding: 2rem 1rem;
+  }
+
+  .nuestraPlataformaTiene {
+    height: 780px;
+    padding: 30px 25px;
+  }
+  .circuloContenedor {
+    height: auto;
+  }
+
+  .circuloUno {
+    height: 70%;
+  }
+  .circuloDos {
+    height: 28%;
+  }
+  .circuloImg {
+    height: 60%;
+  }
+
+  /* fin nuestra plataforma */
+  .sec-home {
+    height: 850px;
+  }
+  .contenedor-campos {
+    display: block;
+  }
+  .card-soporte {
+    display: block;
+  }
+  .footer {
+    display: block;
+  }
+  .enorme-footer {
+    display: block;
+  }
+
+  .contenido-copy {
+    width: auto;
+    /* padding: 0px 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    line-height: 2;
+    text-align: initial;
+  }
+  .copy-text-2 {
+    margin-left: 0px;
+  }
+  /* .one-time img {
+    width: 100%;
+    height: 250px;
+    margin: 0px;
+  } */
+  #carousel_cddb {
+    height: 1000px;
+  }
+  .one-time {
+    width: 100%;
+    height: 300px;
+  }
+
+  .one-time li {
+    width: 30%;
+    height: 300px;
+  }
+
+  .one-time img {
+    width: 100%;
+    height: 300px;
+  }
+  #sumamos {
+    background-image: url("../Imagenes/imagen\ sumamos.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1400px;
+  }
+
+  #sumamos1 {
+    background-color: rgba(245, 241, 241, 0.24);
+    height: auto;
+    padding: 50px 0px 60px 0px;
+    padding: 00px 0px 30px 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 87.5em;
+  }
+  .img-header {
+    width: 100%;
+    height: 700px;
+    padding: 0px 0 80px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .nuestraPlataformaTiene {
+    height: 780px;
+  }
+}
