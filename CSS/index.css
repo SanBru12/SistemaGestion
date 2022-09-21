@@ -1,9 +1,12 @@
 :root {
   /* --colorPrimario: ; */
-  --colorPrimario: #ffdd00;
+  --colorPrimario: #0EFF00;
   /*  --colorSecundario: ; */
-  --colorSecundario: #f0d212;
+  --colorSecundario: #1FC500;
   --colorTerciario: #333333;
+  --colorIntermedio:#089000;
+  --colorCuarto:#0A5D01;
+  --colorQuinto:#053B00;
 }
 
 html {
@@ -79,7 +82,7 @@ link {
 }
 
 #Ultimo_cuadrado {
-  background-color: #f0d212;
+  background-color: var(--colorCuarto);
   width: 360px;
 }
 
@@ -90,7 +93,7 @@ link {
   font-size: 48px;
 }
 #titulo-amarillo {
-  color: var(--colorSecundario);
+  color: var(--colorIntermedio);
   text-transform: uppercase;
   text-align: center;
   /* font-size: 48px;
@@ -424,7 +427,7 @@ link {
 .boton {
   width: 250px;
   height: 50px;
-  background-color: #ffdd00;
+  background-color: var(--colorSecundario);
   color: #333333;
   border: none;
   border-radius: 15px;
@@ -437,7 +440,7 @@ link {
 .footer {
   width: 100%;
   height: auto;
-  background-color: var(--colorPrimario);
+  background-color: var(--colorIntermedio);
   box-sizing: border-box;
   padding: 3% 8%;
   display: flex;
