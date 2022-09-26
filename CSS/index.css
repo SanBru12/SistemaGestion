@@ -20,8 +20,9 @@ html {
 body {
   font-family: "Poppins", sans-serif !important;
 }
+
 *{
-  /* border: 2px rgb(0, 4, 255) solid; */
+  /* border: 1px rgb(0, 4, 255) solid; */
  }
 
 a {
@@ -133,29 +134,32 @@ link {
 }
 
 /* FORMULARIO  */
+
 .formulario-Secc {
   /* background-image: url("../Imagenes/imagen\ formulario.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; */
-
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-  /* padding: 30px 350px; */
+  align-items: left;
   color: rgb(0, 0, 0);
-  /* height: 750px; */
+  /* margin: auto; */
+  /* border: 2px #fa00fa solid; */
+
 }
 
 .formulario-Secc h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .formulario-Secc p {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -164,7 +168,7 @@ link {
   text-align: start;
   background-color: var(--gris);
   /* width: min(45rem, 100%); usa el valor mas pequeño */
-  border: 2px #fa00fa solid;
+  
 }
 
 .formulario fieldset {
@@ -173,17 +177,22 @@ link {
 }
 
 .contenedor-campos {
- width: 100%;
+  width: 100%;
  margin: 10px auto;
  display: grid;
  grid-template-columns: 50% 50%;
  row-gap: 10px;
+ font-size: 12px;
 }
-.tituloCHk{
+
+.tituloDentroForm{
   display: block;
   font-weight: bold;
+  margin:auto;
+  text-align: center;
 }
-  .form-checked{
+.form-checked{
+    border: 2px #fa00fa solid;
   width: 100%;
   margin: 10px auto;
   display: grid;
@@ -205,26 +214,114 @@ link {
 .campo {
   color: var(--colorText);
 /* margin: 20px 10%x ; */
+
 }
 
 .campo label {
   color: var(--blanco);
-  font-weight: 600;
-  font-size: large;
-  margin-bottom: 0.5rem;
+  font-weight: 430;
+  font-size: 16px;
   display: block;
-  color: rgb(0, 0, 0);
+  color: #333333;
+  word-wrap: break-word;
+  font-family: Poppins;
+  /* line-height: 2; */
+   
 }
 
 .input-text {
-  height: 50px;
+  height: 30px;
   width: 80%;
-  border-radius: 10px;
-   padding: 4px 10px;
+  border-radius: 5px;
+  border: 1px #333333 solid ;
+  padding: 4px 10px;
   color: #000000;
   align-items: center;
 }
 
+fieldset .campo .tituloDentroForm .input-text{
+  width: 100%;
+}
+
+.form-checked .campo label,
+.form-checked .campo label input {
+  margin: 0 10px 0 0;
+ cursor: pointer;
+}
+ /* BOTON */
+ .botonEnviar{
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 40%;
+  margin-right: 40%;
+ }
+
+ #txtDescripcion {
+  width: 100%;
+  height: 10vh;
+  border-radius: 5px;
+  border: 1px #333333 solid ;
+  /* padding: 0 10px; */
+  color: #000000;
+  text-align: left;
+  
+ }
+
+button {
+  font-family: inherit;
+  font-size: 20px;
+  /* background: royalblue; */
+  background: var(--colorIntermedio);
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+ }
+ 
+ button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+ }
+ 
+ button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+ }
+ 
+ button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+ }
+ 
+ button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+ }
+ 
+ button:hover span {
+  transform: translateX(5em);
+ }
+ 
+ button:active {
+  transform: scale(0.95);
+ }
+ 
+ @keyframes fly-1 {
+  from {
+   transform: translateY(0.1em);
+  }
+ 
+  to {
+   transform: translateY(-0.1em);
+  }
+ }
+ 
+ /* fin  */
 .boton {
   width: 250px;
   height: 50px;

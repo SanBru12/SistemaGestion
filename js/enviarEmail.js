@@ -8,6 +8,7 @@ function ValidarEnviarEmail() {
     let Direccion = document.getElementById("txtDireccion").value;
     let Email = document.getElementById("txtEmail").value;
     let Redes = document.getElementById("txtRedes").value;
+    
    
 
     if (Nombre == '') {
