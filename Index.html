@@ -96,7 +96,7 @@
 
                     <!-- Formulario estaba aca -->
 
-                    <form class="formulario">
+                    <form class="formulario" name="FormularioEnvio">
                         <fieldset>
                             <legend></legend>
                             <div class="contenedor-campos">
@@ -112,7 +112,7 @@
 
                                 <div class="campo">
                                     <label for="txtEmail">Email:</label>
-                                    <input class="input-text" id="txtEmail" type="email" placeholder="Escribe aquí...">
+                                    <input class="input-text" id="txtEmail" type="email" placeholder="@correo.com">
                                 </div>
 
                                 <div class="campo">
@@ -122,9 +122,8 @@
                                 </div>
 
                                 <div class="campo">
-                                    <label for="txtDireccion">Rubro de la empresa:</label>
-                                    <input class="input-text" id="txtDireccion" type="text"
-                                        placeholder="Escribe aquí...">
+                                    <label for="txtRubro">Rubro de la empresa:</label>
+                                    <input class="input-text" id="txtRubro" type="text" placeholder="Escribe aquí...">
                                 </div>
 
 
@@ -150,51 +149,54 @@
 
                             <div class="form-checked">
                                 <div class="campo ">
-                                    <label for="ChekStock"><input id="ChekStock" type="checkbox"
-                                            placeholder="Escribe aquí...">Control de Stock.</label>
+                                    <label for="ChekStock"><input id="ChekStock" name="ChekStock"
+                                            value="Control de stock" type="checkbox">Control de Stock.</label>
                                 </div>
                                 <div class="campo">
 
-                                    <label for="ChekPrecios"><input id="ChekPrecios" type="checkbox"
-                                            placeholder="Escribe aquí...">Actualizacion de precios.</label>
+                                    <label for="ChekPrecios"><input id="ChekPrecios" value="Actualizacion de precios"
+                                            type="checkbox">Actualizacion de
+                                        precios.</label>
                                 </div>
                                 <div class="campo">
 
-                                    <label for="ChekCaja"><input id="ChekCaja" type="checkbox"
-                                            placeholder="Escribe aquí...">Planilla de caja.</label>
+                                    <label for="ChekCaja"><input id="ChekCaja" value="Planilla de caja"
+                                            type="checkbox">Planilla de caja.</label>
                                 </div>
                                 <div class="campo">
 
-                                    <label for="ChekCtaCtes"><input id="ChekCtaCtes" type="checkbox"
-                                            placeholder="Escribe aquí...">Cuentas corrientes.</label>
+                                    <label for="ChekCtaCtes"><input id="ChekCtaCtes" value="Cuentas corrientes"
+                                            type="checkbox">Cuentas corrientes.</label>
                                 </div>
                                 <div class="campo">
 
-                                    <label for="ChekControlGastos"><input id="ChekControlGastos" type="checkbox"
-                                            placeholder="Escribe aquí...">Control de gastos.</label>
+                                    <label for="ChekControlGastos"><input id="ChekControlGastos"
+                                            value="Control de gastos" type="checkbox">Control de gastos.</label>
                                 </div>
                                 <div class="campo">
 
-                                    <label for="ChekFacturacion"><input id="ChekFacturacion" type="checkbox"
-                                            placeholder="Escribe aquí...">Facturación.</label>
+                                    <label for="ChekFacturacion"><input id="ChekFacturacion" value="Facturacion"
+                                            type="checkbox">Facturación.</label>
                                 </div>
 
                                 <div class="campo">
 
                                     <label for="ChekVinculacionSistemas"><input id="ChekVinculacionSistemas"
-                                            type="checkbox" placeholder="Escribe aquí...">Vinculación con otro
+                                            value="Vinculacion con otros sistemas" type="checkbox">Vinculación con otro
                                         sistema.</label>
                                 </div>
 
                                 <div class="campo">
 
-                                    <label for="ChekVentas"><input id="ChekVentas" type="checkbox"
-                                            placeholder="Escribe aquí...">Ventas y cambios movil.</label>
+                                    <label for="ChekVentas"><input id="ChekVentas" value="Ventas y Cambios mobiles"
+                                            type="checkbox">Ventas y cambios
+                                        movil.</label>
                                 </div>
                                 <div class="campo">
 
-                                    <label for="ChekAccesoRemoto"><input id="ChekAccesoRemoto" type="checkbox"
-                                            placeholder="Escribe aquí...">Problemas en el acceso remoto al
+                                    <label for="ChekAccesoRemoto"><input id="ChekAccesoRemoto" value="Acceso remoto"
+                                            type="checkbox">Problemas en el acceso remoto
+                                        al
                                         sistema.</label>
                                 </div>
                             </div>
@@ -210,10 +212,10 @@
                                 <input class="input-text" id="txtDescripcion" type="text" placeholder="Escribe aquí...">
                             </div>
 
-                            <!-- <div class="alinear-derecha flex" style="text-align: center; margin-top: 20px;">
+                            <div class="alinear-derecha flex" style="text-align: center; margin-top: 20px;">
                                 <input class="boton" type="button" onclick="ValidarEnviarEmail()" value="ENVIAR">
-                            </div> -->
-                            <div class="botonEnviar">
+                            </div>
+                            <!-- <div class="botonEnviar">
                                 <button onclick="ValidarEnviarEmail()" value="ENVIAR">
                                     <div class="svg-wrapper-1">
                                         <div class="svg-wrapper">
@@ -228,7 +230,7 @@
                                     </div>
                                     <span>Enviar</span>
                                 </button>
-                            </div>
+                            </div> -->
                         </fieldset>
                     </form>
                 </div>
