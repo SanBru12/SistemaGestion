@@ -4,10 +4,38 @@ function ValidarEnviarEmail() {
 
     let Nombre = document.getElementById("txtNombre").value;
     let Celular = document.getElementById("txtCelular").value;
-    let NombreEvento = document.getElementById("txtNombreEvento").value;
-    let Direccion = document.getElementById("txtDireccion").value;
     let Email = document.getElementById("txtEmail").value;
-    let Redes = document.getElementById("txtRedes").value;
+    let NombreEmpresa = document.getElementById("txtNombreEvento").value;
+    let Rubro = document.getElementById("txtRubro").value;
+    let Sucursales = document.getElementById("txtCantSucursales").value;
+    let Localidad = document.getElementById("txtLocalidad").value;
+//Chekeds
+    
+    var chkStock = $('#ChekStock').prop('checked');
+    if (chkStock == true) {
+
+       let chkStockText = document.getElementById("ChekStock").value;
+
+  
+}else{
+        
+}
+var chkPrecios = $('#ChekPrecios').prop('checked');
+if (ChekPrecios==true){
+    
+    let ChekPreciosText= document.getElementById("ChekPrecios").value;
+    console.log(chkStockText);
+    console.log(ChekPreciosText);
+    }
+    let chkCaja = document.getElementById("ChekCaja").value;
+    let chkCtacte = document.getElementById("ChekCtaCtes").value;
+    let chkGastos = document.getElementById("ChekControlGastos").value;
+    let chkFacturacion = document.getElementById("ChekFacturacion").value;
+    let chkVinculoSitema = document.getElementById("ChekVinculacionSistemas").value;
+    let chkVentas = document.getElementById("ChekVentas").value;
+    let chkAccesRemoto= document.getElementById("ChekAccesoRemoto").value;
+// Detalles
+    let Detalles = document.getElementById("txtDescripcion").value;
    
 
     if (Nombre == '') {
@@ -24,51 +52,83 @@ function ValidarEnviarEmail() {
 
         } else {
 
-            if (NombreEvento == '') {
+            if (Email == '') {
 
                 swal("Error", "Por favor complete con el nombre de su evento", "warning");
                 return;
 
             } else {
 
-                if (Email == '') {
+                if (NombreEmpresa == '') {
 
                     swal("Error", "Por favor complete con su email", "warning");
                     return;
 
                 } else {
 
+                    if (Rubro == '') {
+
+                        swal("Error", "Por favor complete con el rubro de la empresa", "warning");
+                        return;
+
+                        } else {
+
+                            if (Sucursales == '') {
+
+                            swal("Error", "Por favor indique la cantidad de sucursales", "warning");
+                          return;
+
+                             } else {
+
+                                if (Localidad == '') {
+
+                                    swal("Error", "Por favor indique la localidad de la empresa", "warning");
+                                    return;
+
+                                } else {
+
+                                    if (Detalles == '') {
+
+                                        swal("Error", "Por favor complete con su email", "warning");
+                                        return;
+
+                                 
+                                    } else {
+
                    
 
-                        swal({
-                            title: "¿Desea enviar sus datos para que nos pongamos en contacto con usted?",
-                            type: "question",
-                            showCancelButton: true,
-                            cancelButtonText: 'CANCELAR',
-                            reverseButtons: true,
-                            confirmButtonText: 'ACEPTAR',
-                            confirmButtonColor: '#39b2c7',
-                            closeOnConfirm: false,
-                            showLoaderOnConfirm: true,
-                            allowOutsideClick: false,
-                            preConfirm: function () {
+                                        swal({
+                                        title: "¿Desea enviar sus datos para que nos pongamos en contacto con usted?",
+                                        type: "question",
+                                        showCancelButton: true,
+                                        cancelButtonText: 'CANCELAR',
+                                        reverseButtons: true,
+                                        confirmButtonText: 'ACEPTAR',
+                                        confirmButtonColor: '#39b2c7',
+                                        closeOnConfirm: false,
+                                        showLoaderOnConfirm: true,
+                                        allowOutsideClick: false,
+                                        preConfirm: function () {
 
-                                let datos = {
-                                    Nombre,
-                                    Celular,
-                                    NombreEvento,
-                                    Direccion,
-                                    Email,
-                                    Redes
-                                };
+                                            let datos = {
+                                                Nombre,
+                                                Celular,
+                                                NombreEvento,
+                                                Direccion,
+                                                Email,
+                                                Redes
+                                            };
 
-                                EnviarEmail(datos);
-
+                                            EnviarEmail(datos);
+                                        }
+                                    });
+                               }
+                                
                             }
-                        });
-
-
-
+                        }
+                            
+                    }
+                
                 }
 
             }
