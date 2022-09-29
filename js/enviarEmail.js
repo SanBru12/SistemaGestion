@@ -10,18 +10,23 @@ function ValidarEnviarEmail() {
     let Sucursales = document.getElementById("txtCantSucursales").value;
     let Localidad = document.getElementById("txtLocalidad").value;
 //Chekeds
-    //var chkStock = document.forms["FormularioEnvio"]["ChekStock"].cheked;
+    
     var chkStock = $('#ChekStock').prop('checked');
     if (chkStock == true) {
 
        let chkStockText = document.getElementById("ChekStock").value;
 
-       console.log(chkStock);
-       console.log(chkStockText);
-    }else{
+  
+}else{
         
+}
+var chkPrecios = $('#ChekPrecios').prop('checked');
+if (ChekPrecios==true){
+    
+    let ChekPreciosText= document.getElementById("ChekPrecios").value;
+    console.log(chkStockText);
+    console.log(ChekPreciosText);
     }
-    let chkPrecios = document.getElementById("ChekPrecios").value;
     let chkCaja = document.getElementById("ChekCaja").value;
     let chkCtacte = document.getElementById("ChekCtaCtes").value;
     let chkGastos = document.getElementById("ChekControlGastos").value;
