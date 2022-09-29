@@ -1,12 +1,12 @@
 :root {
   /* --colorPrimario: ; */
-  --colorPrimario: #0EFF00;
+  --colorPrimario: #0eff00;
   /*  --colorSecundario: ; */
-  --colorSecundario: #1FC500;
+  --colorSecundario: #1fc500;
   --colorTerciario: #333333;
-  --colorIntermedio:#089000;
-  --colorCuarto:#0A5D01;
-  --colorQuinto:#053B00;
+  --colorIntermedio: #089000;
+  --colorCuarto: #0a5d01;
+  --colorQuinto: #053b00;
 }
 
 html {
@@ -21,9 +21,9 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
-*{
+* {
   /* border: 1px rgb(0, 4, 255) solid; */
- }
+}
 
 a {
   text-decoration: none;
@@ -60,7 +60,7 @@ link {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 40em;
+
   padding: 30px 30px;
 }
 #sumamos {
@@ -110,7 +110,6 @@ link {
   color: #333333;
   /* margin-bottom: -20px; */
   border: 2px rgb(221, 41, 41) Solid;
-
 }
 
 .card-home {
@@ -148,7 +147,6 @@ link {
   color: rgb(0, 0, 0);
   /* margin: auto; */
   /* border: 2px #fa00fa solid; */
-
 }
 
 .formulario-Secc h2 {
@@ -168,7 +166,6 @@ link {
   text-align: start;
   background-color: var(--gris);
   /* width: min(45rem, 100%); usa el valor mas pequeño */
-  
 }
 
 .formulario fieldset {
@@ -178,21 +175,21 @@ link {
 
 .contenedor-campos {
   width: 100%;
- margin: 10px auto;
- display: grid;
- grid-template-columns: 50% 50%;
- row-gap: 10px;
- font-size: 12px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 10px;
+  font-size: 12px;
 }
 
-.tituloDentroForm{
+.tituloDentroForm {
   display: block;
   font-weight: bold;
-  margin:auto;
+  margin: auto;
   text-align: center;
 }
-.form-checked{
-    border: 2px #fa00fa solid;
+.form-checked {
+  border: 2px #fa00fa solid;
   width: 100%;
   margin: 10px auto;
   display: grid;
@@ -213,8 +210,11 @@ link {
 
 .campo {
   color: var(--colorText);
-/* margin: 20px 10%x ; */
+  /* margin: 20px 10%x ; */
+}
 
+.ultimo-campo {
+  grid-column: 1/-1;
 }
 
 .campo label {
@@ -226,46 +226,44 @@ link {
   word-wrap: break-word;
   font-family: Poppins;
   /* line-height: 2; */
-   
 }
 
 .input-text {
   height: 30px;
   width: 80%;
   border-radius: 5px;
-  border: 1px #333333 solid ;
+  border: 1px #333333 solid;
   padding: 4px 10px;
   color: #000000;
   align-items: center;
 }
 
-fieldset .campo .tituloDentroForm .input-text{
+fieldset .campo .tituloDentroForm .input-text {
   width: 100%;
 }
 
 .form-checked .campo label,
 .form-checked .campo label input {
   margin: 0 10px 0 0;
- cursor: pointer;
+  cursor: pointer;
 }
- /* BOTON */
- .botonEnviar{
+/* BOTON */
+.botonEnviar {
   justify-content: center;
   margin-top: 30px;
   margin-left: 40%;
   margin-right: 40%;
- }
+}
 
- #txtDescripcion {
+#txtDescripcion {
   width: 100%;
   height: 10vh;
   border-radius: 5px;
-  border: 1px #333333 solid ;
+  border: 1px #333333 solid;
   /* padding: 0 10px; */
   color: #000000;
   text-align: left;
-  
- }
+}
 
 button {
   font-family: inherit;
@@ -281,47 +279,47 @@ button {
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.2s;
- }
- 
- button span {
+}
+
+button span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
- }
- 
- button svg {
+}
+
+button svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
- }
- 
- button:hover .svg-wrapper {
+}
+
+button:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
- }
- 
- button:hover svg {
+}
+
+button:hover svg {
   transform: translateX(1.2em) rotate(45deg) scale(1.1);
- }
- 
- button:hover span {
+}
+
+button:hover span {
   transform: translateX(5em);
- }
- 
- button:active {
+}
+
+button:active {
   transform: scale(0.95);
- }
- 
- @keyframes fly-1 {
+}
+
+@keyframes fly-1 {
   from {
-   transform: translateY(0.1em);
+    transform: translateY(0.1em);
   }
- 
+
   to {
-   transform: translateY(-0.1em);
+    transform: translateY(-0.1em);
   }
- }
- 
- /* fin  */
+}
+
+/* fin  */
 .boton {
   width: 250px;
   height: 50px;
@@ -407,13 +405,11 @@ button {
   align-items: center;
   align-content: center;
   margin: 20px 50px;
-
 }
 
-.Circ-nosDif{
+.Circ-nosDif {
   background-color: var(--colorPrimario);
   margin-right: 20px;
-
 }
 /* .nosDiferencia-card .circulo{
   position: relative;
@@ -435,7 +431,6 @@ button {
   width: 43px;
   height: 43px;
 }
-
 
 .nosDiferencia-Img {
   width: 40%;
@@ -553,7 +548,6 @@ button {
 .textCirculos .textoUno {
   margin-top: 20px;
 }
-
 
 .footer {
   width: 100%;
@@ -1048,7 +1042,6 @@ ul {
   }
 
   .nosDiferencia-Parrafos img {
-
     margin: auto;
     width: 43px;
     height: 43px;
@@ -1298,7 +1291,6 @@ ul {
     height: 100%;
   }
   .nosDiferencia-Parrafos img {
-
     margin: auto;
     width: 43px;
     height: 43px;
