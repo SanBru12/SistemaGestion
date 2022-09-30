@@ -163,7 +163,8 @@ if (chkAccesRemoto== true) {
                                                 chkFacturacionText,
                                                 chkVinculoSitemaText,
                                                 chkVentasText,
-                                            };D
+                                                Detalles
+                                            }
 
                                             EnviarEmail(datos);
                                         }
