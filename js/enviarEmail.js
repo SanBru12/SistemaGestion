@@ -10,7 +10,7 @@ function ValidarEnviarEmail() {
     let Sucursales = document.getElementById("txtCantSucursales").value;
     let Localidad = document.getElementById("txtLocalidad").value;
     //Chekeds
-    
+
     var chkPrecios = $('#ChekPrecios').prop('checked');
     var chkStock = $('#ChekStock').prop('checked');
     var chkCaja = $('#ChekCaja').prop('checked');
@@ -19,61 +19,57 @@ function ValidarEnviarEmail() {
     var chkFacturacion = $('#ChekFacturacion').prop('checked');
     var chkVinculoSitema = $('#ChekVinculacionSistemas').prop('checked');
     var chkVentas = $('#ChekVentas').prop('checked');
-    var chkAccesRemoto= $('#ChekAccesoRemoto').prop('checked');
+    var chkAccesRemoto = $('#ChekAccesoRemoto').prop('checked');
     let Detalles = document.getElementById("txtDescripcion").value;
     //-*------------------------------------------------------------------------------------------
 
 
-if (chkStock == true) 
-{
-    
-    let chkStockText = document.getElementById("ChekStock").value;
-    
-    
-    console.log(chkStockText);
-} 
+    if (chkStock == true) {
 
-if (chkPrecios==true)
-    {
-        let ChekPreciosText= document.getElementById("ChekPrecios").value;
+        var chkStockText = document.getElementById("ChekStock").value;
+        console.log(chkStockText);
+    }
+
+    if (chkPrecios == true) {
+        var ChekPreciosText = document.getElementById("ChekPrecios").value;
         console.log(ChekPreciosText);
     }
-    
- if (chkCaja==true) {
-    let chkCajaText = document.getElementById("ChekCaja").value;
-    console.log(chkCajaText);
 
- }  
- 
- if (chkCtacte== true){
-        let chkCtacteText = document.getElementById("ChekCtaCtes").value;
+    if (chkCaja == true) {
+        var chkCajaText = document.getElementById("ChekCaja").value;
+        console.log(chkCajaText);
+
+    }
+
+    if (chkCtacte == true) {
+        var chkCtacteText = document.getElementById("ChekCtaCtes").value;
         console.log(chkCtacteText);
     }
 
-if (chkGastos==true){
-    let chkGastosText = document.getElementById("ChekControlGastos").value;
-    console.log(chkGastosText);
-}
-if (chkFacturacion==true){
-    let chkFacturacionText = document.getElementById("ChekFacturacion").value;
-    console.log(chkFacturacionText);
-}
-if (chkVinculoSitema==true) {
-    let chkVinculoSitemaText = document.getElementById("ChekVinculacionSistemas").value;
-    console.log(chkVinculoSitemaText);
-}  
-if (chkVentas==true){
-    let chkVentasText = document.getElementById("ChekVentas").value;
-    console.log(chkVentasText);
+    if (chkGastos == true) {
+        var chkGastosText = document.getElementById("ChekControlGastos").value;
+        console.log(chkGastosText);
+    }
+    if (chkFacturacion == true) {
+        var chkFacturacionText = document.getElementById("ChekFacturacion").value;
+        console.log(chkFacturacionText);
+    }
+    if (chkVinculoSitema == true) {
+        var chkVinculoSitemaText = document.getElementById("ChekVinculacionSistemas").value;
+        console.log(chkVinculoSitemaText);
+    }
+    if (chkVentas == true) {
+        var chkVentasText = document.getElementById("ChekVentas").value;
+        console.log(chkVentasText);
 
-}
-if (chkAccesRemoto== true) {
-    let chkAccesRemotoText = document.getElementById("ChekAccesoRemoto").value;
-    console.log(chkAccesRemotoText);
-}
-//Validacion de campos Textos
+    }
+    if (chkAccesRemoto == true) {
+        var chkAccesRemotoText = document.getElementById("ChekAccesoRemoto").value;
+        console.log(chkAccesRemotoText);
+    }
+    //Validacion de campos Textos
 
-    
+
 
     if (Nombre == '') {
 
@@ -108,33 +104,33 @@ if (chkAccesRemoto== true) {
                         swal("Error", "Por favor complete con el rubro de la empresa", "warning");
                         return;
 
-                        } else {
+                    } else {
 
-                            if (Sucursales == '') {
+                        if (Sucursales == '') {
 
                             swal("Error", "Por favor indique la cantidad de sucursales", "warning");
-                          return;
+                            return;
 
-                             } else {
+                        } else {
 
-                                if (Localidad == '') {
+                            if (Localidad == '') {
 
-                                    swal("Error", "Por favor indique la localidad de la empresa", "warning");
+                                swal("Error", "Por favor indique la localidad de la empresa", "warning");
+                                return;
+
+                            } else {
+
+                                if (Detalles == '') {
+
+                                    swal("Error", "Por favor comentanos alguna expectativa que tengas", "warning");
                                     return;
+
 
                                 } else {
 
-                                    if (Detalles == '') {
 
-                                        swal("Error", "Por favor comentanos alguna expectativa que tengas", "warning");
-                                        return;
 
-                                 
-                                    } else {
-
-                   
-
-                                        swal({
+                                    swal({
                                         title: "¿Desea enviar sus datos para que nos pongamos en contacto con usted?",
                                         type: "question",
                                         showCancelButton: true,
@@ -163,19 +159,20 @@ if (chkAccesRemoto== true) {
                                                 chkFacturacionText,
                                                 chkVinculoSitemaText,
                                                 chkVentasText,
+                                                chkAccesRemotoText,
                                                 Detalles
                                             }
 
                                             EnviarEmail(datos);
                                         }
                                     });
-                               }
-                                
+                                }
+
                             }
                         }
-                            
+
                     }
-                
+
                 }
 
             }
@@ -192,7 +189,7 @@ function EnviarEmail(datos) {
 
     $.ajax({
         type: 'POST',
-        url: 'frmInicio.aspx/EnviarEmail',
+        url: 'frmIndex.aspx/EnviarEmail',
         data: JSON.stringify(json),
         contentType: "application/json; charset=utf-8",
         dataType: "json",
@@ -216,7 +213,7 @@ function EnviarEmail(datos) {
 
                 //Checkbox 
                 chkStockText = document.getElementById("ChekStock").value = false;
-                ChekPreciosText= document.getElementById("ChekPrecios").value = false;
+                ChekPreciosText = document.getElementById("ChekPrecios").value = false;
                 chkCajaText = document.getElementById("ChekCaja").value = false;
                 chkCtacteText = document.getElementById("ChekCtaCtes").value = false;
                 chkGastosText = document.getElementById("ChekControlGastos").value = false;
