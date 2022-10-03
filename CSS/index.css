@@ -192,7 +192,7 @@ link {
   text-align: center;
 }
 .form-checked{
-    border: 2px #fa00fa solid;
+    /* border: 2px #fa00fa solid; */
   width: 100%;
   margin: 10px auto;
   display: grid;
