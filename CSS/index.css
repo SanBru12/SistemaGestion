@@ -151,8 +151,9 @@ h1 {
     ),
     url(/Imagenes/open-work.webp);
   background-size: cover;
-  background-size: 100%;
+  /* background-size: 100%; */
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-home {
@@ -161,7 +162,7 @@ h1 {
 }
 
 .titulo-home {
-  font-size: 3.5rem;
+  font-size: 3.5rem !important;
   font-weight: bold !important;
   font-weight: 550 !important;
 }
@@ -923,9 +924,9 @@ ul {
     width: 54%;
     padding: 0px 50px;
   }
-  /* .circuloContenedor {
+  .circuloContenedor {
     height: 450px;
-  } */
+  }
   .circuloText h2 {
     text-align: center;
   }
@@ -947,7 +948,7 @@ ul {
   .footer {
     width: 100%;
     height: auto;
-    background-color: var(--colorPrimario);
+    /* background-color: var(--colorPrimario); */
     box-sizing: border-box;
     padding: 5%;
     display: flex;
@@ -994,15 +995,9 @@ ul {
     height: 100%;
     padding: 3% 6%;
   }
-  #sumamos {
-    height: 65em;
-  }
-  #sumamos1 {
-    height: 65em;
-  }
 }
 
-@media (max-width: 880px) {
+@media (-width: 880px) {
   .prueba {
     width: 100%;
   }
@@ -1116,10 +1111,10 @@ ul {
 
   /* SUMAMOS */
   #sumamos {
-    height: 65em;
-  }
-  #sumamos1 {
-    height: 65em;
+    height: 100%;
+    padding: 0px;
+    background-position: bottom;
+    background-size: auto;
   }
 
   /* NUESTRA PLATAFORMA TIENE*/
@@ -1247,6 +1242,15 @@ ul {
     align-items: flex-start;
     line-height: 2;
   }
+
+  #sumamos {
+    background-image: url("../Imagenes/imagen\ sumamos.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* height: 81em; */
+  }
 }
 
 @media (max-width: 780px) {
@@ -1336,10 +1340,12 @@ ul {
     height: 350px;
   }
   #sumamos {
-    height: 65em;
-  }
-  #sumamos1 {
-    height: 65em;
+    background-image: url("../Imagenes/imagen\ sumamos.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
   }
   .nosDiferencia-Parrafos img {
     margin: auto;
@@ -1356,23 +1362,28 @@ ul {
     height: 1000px;
   }
 
-  #titulo1 {
-    font-size: 30px;
+  #sumamos {
+    background-image: url("../Imagenes/imagen\ sumamos.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80.7em;
   }
 
-  #sumamos {
-    height: 112em;
-  }
   #sumamos1 {
-    height: 112em;
+    background-color: rgba(245, 241, 241, 0.24);
+    height: auto;
+    padding: 50px 0px 60px 0px;
+    padding: 00px 0px 30px 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80em;
   }
 }
 
 @media (max-width: 480px) {
-  .titulo-home {
-    font-size: 0.8rem;
-  }
-
   .nuestraPlataforma {
     height: 850px;
   }
@@ -1451,7 +1462,25 @@ ul {
     width: 100%;
     height: 300px;
   }
+  #sumamos {
+    background-image: url("../Imagenes/imagen\ sumamos.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1400px;
+  }
 
+  #sumamos1 {
+    background-color: rgba(245, 241, 241, 0.24);
+    height: auto;
+    padding: 50px 0px 60px 0px;
+    padding: 00px 0px 30px 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 87.5em;
+  }
   .img-header {
     width: 100%;
     height: 700px;
