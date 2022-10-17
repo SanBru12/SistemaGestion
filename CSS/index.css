@@ -418,7 +418,8 @@ button:active {
   gap: 20px;
   /* background-color: #4cce90; */
   /* background-color: #b3ce8a; */
-  background-color: #becf77;
+  background-color: #becf77; /*  */
+  background-color: #4f9d69;
 
   border-radius: 9px;
 
@@ -460,7 +461,9 @@ button:active {
 }
 
 .Circ-nosDif {
-  background-color: var(--colorPrimario);
+  /* background-color: var(--colorPrimario); */
+  background-color: #6eeb83;
+
   margin-right: 20px;
 }
 /* .nosDiferencia-card .circulo{
@@ -604,7 +607,7 @@ button:active {
 .footer {
   width: 100%;
   height: auto;
-  background-color: var(--colorIntermedio);
+  background-color: #6eeb83;
   box-sizing: border-box;
   padding: 3% 8%;
   display: flex;
