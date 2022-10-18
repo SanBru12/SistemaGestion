@@ -1,6 +1,6 @@
 :root {
   /* --colorPrimario: ; */
-  --colorPrimario: #0eff00;
+  --colorPrimario: #6eeb83;
   /*  --colorSecundario: ; */
   --colorSecundario: #1fc500;
   --colorTerciario: #333333;
@@ -149,10 +149,11 @@ h1 {
       rgba(0, 0, 0, 0.418),
       rgba(10, 10, 10, 0.205)
     ),
-    url(/Imagenes/open-work.webp);
+    url(/Imagenes/open-work.jpg);
   background-size: cover;
-  background-size: 100%;
+  /* background-size: 100%; */
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-home {
@@ -418,7 +419,7 @@ button:active {
   gap: 20px;
   /* background-color: #4cce90; */
   /* background-color: #b3ce8a; */
-  background-color: #becf77;
+  background-color: #6eeb83;
 
   border-radius: 9px;
 
@@ -858,7 +859,7 @@ ul {
   }
 }
 
-@media (max-width: 1400px) {
+@ (max-width: 1400px) {
   /* .home {
     height: 100%;
   } */
@@ -871,11 +872,12 @@ ul {
   /* .sec-home{
     height: 900px;
   } */
+
   .img-diseño {
     position: relative;
     width: 100%;
     height: 100%;
-    left: 0px;
+    left: 0;
   }
 
   #nuestraPlataforma {
@@ -944,7 +946,7 @@ ul {
   .footer {
     width: 100%;
     height: auto;
-    background-color: var(--colorPrimario);
+    background-color: #6eeb83;
     box-sizing: border-box;
     padding: 5%;
     display: flex;
@@ -1043,6 +1045,7 @@ ul {
   .home {
     flex-direction: column;
     /* height: 100%; */
+    align-items: center;
   }
 
   .img-header {
