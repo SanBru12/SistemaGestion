@@ -53,10 +53,33 @@ link {
   margin-top: 20px;
   width: 200px;
   fill: var(--colorPrimario) !important;
+  color: #40c057;
 }
 
+/* color de portada texto*/
+
+h1 {
+  color: #37b24d;
+}
+
+.titulo-home {
+  color: #37b24d;
+}
+
+.texto-portada {
+  /* color: #40c057; */
+  /* color: #8ce99a; */
+  color: #d3f9d8;
+}
+
+/**/
+
 #nuestraPlataforma {
-  background-image: url("../Imagenes/imagen\ de\ fondo\ conoce\ nuestra\ plataforma.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.418),
+      rgba(10, 10, 10, 0.13)
+    ),
+    url(/Imagenes/elegirnos.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -64,11 +87,15 @@ link {
   padding: 30px 30px;
 }
 #sumamos {
-  background-image: url("../Imagenes/imagen\ sumamos.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.418),
+      rgba(10, 10, 10, 0.11)
+    ),
+    url(/Imagenes/stock-mujer.webp);
   height: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   height: 50em;
 }
 
@@ -94,6 +121,14 @@ link {
   text-align: center;
   font-size: 48px;
 }
+
+#titulo1 {
+  color: #ebff94;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+}
+
 #titulo-amarillo {
   color: var(--colorIntermedio);
   text-transform: uppercase;
@@ -108,8 +143,16 @@ link {
   display: flex;
   flex-direction: row;
   color: #333333;
-  /* margin-bottom: -20px; */
-  border: 2px rgb(221, 41, 41) Solid;
+  margin-bottom: -20px;
+
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.418),
+      rgba(10, 10, 10, 0.205)
+    ),
+    url(/Imagenes/open-work.webp);
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .card-home {
@@ -118,7 +161,7 @@ link {
 }
 
 .titulo-home {
-  font-size: 3.5rem !important;
+  font-size: 3.5rem;
   font-weight: bold !important;
   font-weight: 550 !important;
 }
@@ -189,8 +232,8 @@ link {
   text-align: center;
 }
 
-.form-checked{
-    /* border: 2px #fa00fa solid; */
+.form-checked {
+  /* border: 2px #fa00fa solid; */
   width: 100%;
   margin: 10px auto;
   display: grid;
@@ -223,7 +266,8 @@ link {
   font-weight: 430;
   font-size: 16px;
   display: block;
-  color: #333333;
+  /* color: #8ce99a; */
+  color: #b2f2bb;
   word-wrap: break-word;
   font-family: Poppins;
   /* line-height: 2; */
@@ -324,7 +368,7 @@ button:active {
 .boton {
   width: 250px;
   height: 50px;
-  background-color: var(--colorSecundario);
+  background-color: #37b24d;
   color: #333333;
   border: none;
   border-radius: 15px;
@@ -357,8 +401,10 @@ button:active {
   align-content: center;
   justify-content: center;
   gap: 20px;
-  background-color: var(--colorSecundario);
+  /* background-color: #95d387; */
+  background-color: #6eeb83;
   text-align: initial;
+  border-radius: 9px;
 }
 
 #card1 {
@@ -370,7 +416,12 @@ button:active {
   align-content: center;
   justify-content: center;
   gap: 20px;
-  background-color: var(--colorSecundario);
+  /* background-color: #4cce90; */
+  /* background-color: #b3ce8a; */
+  background-color: #becf77;
+
+  border-radius: 9px;
+
   text-align: initial;
   grid-area: card1;
 }
@@ -560,6 +611,7 @@ button:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
 }
 
 .enorme-footer {
@@ -868,9 +920,9 @@ ul {
     width: 54%;
     padding: 0px 50px;
   }
-  .circuloContenedor {
+  /* .circuloContenedor {
     height: 450px;
-  }
+  } */
   .circuloText h2 {
     text-align: center;
   }
@@ -938,6 +990,12 @@ ul {
   .card-home {
     height: 100%;
     padding: 3% 6%;
+  }
+  #sumamos {
+    height: 65em;
+  }
+  #sumamos1 {
+    height: 65em;
   }
 }
 
@@ -1055,10 +1113,10 @@ ul {
 
   /* SUMAMOS */
   #sumamos {
-    height: 100%;
-    padding: 0px;
-    background-position: bottom;
-    background-size: auto;
+    height: 65em;
+  }
+  #sumamos1 {
+    height: 65em;
   }
 
   /* NUESTRA PLATAFORMA TIENE*/
@@ -1186,15 +1244,6 @@ ul {
     align-items: flex-start;
     line-height: 2;
   }
-
-  #sumamos {
-    background-image: url("../Imagenes/imagen\ sumamos.jpg");
-    height: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    /* height: 81em; */
-  }
 }
 
 @media (max-width: 780px) {
@@ -1284,12 +1333,10 @@ ul {
     height: 350px;
   }
   #sumamos {
-    background-image: url("../Imagenes/imagen\ sumamos.jpg");
-    height: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
+    height: 65em;
+  }
+  #sumamos1 {
+    height: 65em;
   }
   .nosDiferencia-Parrafos img {
     margin: auto;
@@ -1306,28 +1353,23 @@ ul {
     height: 1000px;
   }
 
-  #sumamos {
-    background-image: url("../Imagenes/imagen\ sumamos.jpg");
-    height: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 80.7em;
+  #titulo1 {
+    font-size: 30px;
   }
 
+  #sumamos {
+    height: 112em;
+  }
   #sumamos1 {
-    background-color: rgba(245, 241, 241, 0.24);
-    height: auto;
-    padding: 50px 0px 60px 0px;
-    padding: 00px 0px 30px 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 80em;
+    height: 112em;
   }
 }
 
 @media (max-width: 480px) {
+  .titulo-home {
+    font-size: 0.8rem;
+  }
+
   .nuestraPlataforma {
     height: 850px;
   }
@@ -1406,25 +1448,7 @@ ul {
     width: 100%;
     height: 300px;
   }
-  #sumamos {
-    background-image: url("../Imagenes/imagen\ sumamos.jpg");
-    height: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 1400px;
-  }
 
-  #sumamos1 {
-    background-color: rgba(245, 241, 241, 0.24);
-    height: auto;
-    padding: 50px 0px 60px 0px;
-    padding: 00px 0px 30px 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 87.5em;
-  }
   .img-header {
     width: 100%;
     height: 700px;
