@@ -80,7 +80,7 @@ h1 {
       rgba(0, 0, 0, 0.418),
       rgba(10, 10, 10, 0.13)
     ),
-    url(/Imagenes/elegirnos.webp);
+    url(/Imagenes/imagen\ porque\ elegirnos.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -92,7 +92,7 @@ h1 {
       rgba(0, 0, 0, 0.418),
       rgba(10, 10, 10, 0.11)
     ),
-    url(/Imagenes/stock-mujer.webp);
+    url(/Imagenes/imagen\ caracteristicas.jpg);
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -150,7 +150,7 @@ h1 {
       rgba(0, 0, 0, 0.418),
       rgba(10, 10, 10, 0.205)
     ),
-    url(/Imagenes/open-work.jpg);
+    url(/Imagenes/imagen\ home.jpg);
   background-size: cover;
   /* background-size: 100%; */
   background-repeat: no-repeat;
@@ -669,7 +669,7 @@ button:active {
   align-items: center;
   align-content: center;
   line-height: 1.5;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .ubicacion img {
@@ -685,7 +685,7 @@ button:active {
   justify-content: start;
   align-items: center;
   align-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .whatsapp img {
@@ -703,7 +703,7 @@ button:active {
   align-content: center;
   cursor: pointer;
   line-height: 1.5;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .email img {
@@ -1390,4 +1390,15 @@ ul {
 
 #panel_control {
   padding-top: 5px;
+}
+
+.footer-color-letras {
+  color: #fff;
+}
+
+.logo-footer-goodapps {
+  width: 150px;
+  height: 150px;
+  margin-bottom: -70px;
+  margin-top: -30px;
 }
