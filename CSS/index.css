@@ -67,8 +67,21 @@ h1 {
   /* color: #40c057; */
   /* color: #8ce99a; */
   color: #ffff;
+  font-weight: 430;
+  font-family: Poppins;
+  font-size: 16px;
 }
-
+.texto-portada2 {
+  font-family: Poppins;
+  font-weight: 430;
+  font-size: 16px;
+}
+.texto-portada3 {
+  font-family: Poppins;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-size: 16px;
+}
 /**/
 
 #nuestraPlataforma {
@@ -154,7 +167,7 @@ h1 {
 }
 
 .card-home {
-  padding: 15% 10%;
+  padding: 15% 2%;
   height: auto;
 }
 
@@ -185,7 +198,7 @@ h1 {
   right: 39px;
   background-color: rgba(255, 255, 255, 0.658);
   border-radius: 12px;
-  padding: 33px 13px;
+  padding: 33px 33px;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
