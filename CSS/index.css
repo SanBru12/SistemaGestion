@@ -1,6 +1,6 @@
 :root {
   /* --colorPrimario: ; */
-  --colorPrimario: #0eff00;
+  --colorPrimario: #6eeb83;
   /*  --colorSecundario: ; */
   --colorSecundario: #1fc500;
   --colorTerciario: #333333;
@@ -19,10 +19,6 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif !important;
-}
-
-* {
-  /* border: 1px rgb(0, 4, 255) solid; */
 }
 
 a {
@@ -53,22 +49,76 @@ link {
   margin-top: 20px;
   width: 200px;
   fill: var(--colorPrimario) !important;
+  color: #40c057;
 }
 
+/* color de portada texto*/
+
+h1 {
+  color: #37b24d;
+}
+
+.titulos-formulario {
+  text-align: left;
+}
+
+.letras-portada {
+  font-style: italic;
+}
+
+.titulo-home {
+  /* color: #37b24d; */
+  color: #fff;
+}
+
+.texto-portada {
+  /* color: #40c057; */
+  /* color: #8ce99a; */
+  color: #ffff;
+  font-weight: 430;
+  font-family: Poppins;
+  font-size: 16px;
+}
+.texto-portada2 {
+  font-family: Poppins;
+  font-weight: 430;
+  font-size: 16px;
+}
+.texto-portada3 {
+  font-family: Poppins;
+  /* text-transform: lowercase; */
+  font-weight: bold;
+  font-size: 16px;
+}
+/**/
+
 #nuestraPlataforma {
-  background-image: url("../Imagenes/imagen\ de\ fondo\ conoce\ nuestra\ plataforma.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.418),
+      rgba(10, 10, 10, 0.13)
+    ),
+    url(/Imagenes/imagen\ porque\ elegirnos.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 
   padding: 30px 30px;
 }
+.iconos-elegirnos {
+  width: 60px;
+  height: 60px;
+}
+
 #sumamos {
-  background-image: url("../Imagenes/imagen\ sumamos.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.418),
+      rgba(10, 10, 10, 0.11)
+    ),
+    url(/Imagenes/imagen\ caracteristicas.jpg);
   height: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   height: 50em;
 }
 
@@ -94,6 +144,13 @@ link {
   text-align: center;
   font-size: 48px;
 }
+
+#titulo1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+}
+
 #titulo-amarillo {
   color: var(--colorIntermedio);
   text-transform: uppercase;
@@ -107,18 +164,27 @@ link {
   height: auto;
   display: flex;
   flex-direction: row;
-  color: #333333;
+  color: #fff;
   /* margin-bottom: -20px; */
-  border: 2px rgb(221, 41, 41) Solid;
+
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.418),
+      rgba(10, 10, 10, 0.95)
+    ),
+    url(/Imagenes/imagen\ home.jpg);
+  background-size: cover;
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-home {
-  padding: 15% 10%;
+  padding: 0% 2%;
   height: auto;
 }
 
 .titulo-home {
-  font-size: 3.5rem !important;
+  font-size: 3.5rem;
   font-weight: bold !important;
   font-weight: 550 !important;
 }
@@ -135,23 +201,46 @@ link {
 /* FORMULARIO  */
 
 .formulario-Secc {
-  /* background-image: url("../Imagenes/imagen\ formulario.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-  width: 35%;
+  width: 48%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: left;
-  color: rgb(0, 0, 0);
-  /* margin: auto; */
-  /* border: 2px #fa00fa solid; */
+  color: #000000;
+  right: 39px;
+  background-color: rgba(255, 255, 255, 0.658);
+  border-radius: 12px;
+  padding: 33px 33px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#formulario-Seccc p,
+#formulario-Seccc h2,
+.formulario-Secc .tituloDentroForm .texto-portada {
+  color: #000000;
+}
+
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 15%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: var(--colorSecundario);
+  border: 3px white solid;
 }
 
 .formulario-Secc h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
 }
 
@@ -170,7 +259,6 @@ link {
 
 .formulario fieldset {
   border: none;
-  margin: 10px;
 }
 
 .contenedor-campos {
@@ -185,12 +273,15 @@ link {
 .tituloDentroForm {
   display: block;
   font-weight: bold;
-  margin: auto;
-  text-align: center;
-}
+  margin-top: 40px;
 
-.form-checked{
-    /* border: 2px #fa00fa solid; */
+  text-align: left;
+}
+.tituloDentroForm label {
+  margin-bottom: 20px;
+}
+.form-checked {
+  /* border: 2px #fa00fa solid; */
   width: 100%;
   margin: 10px auto;
   display: grid;
@@ -211,6 +302,7 @@ link {
 
 .campo {
   color: var(--colorText);
+  /* margin: 10px 0; */
   /* margin: 20px 10%x ; */
 }
 
@@ -223,6 +315,7 @@ link {
   font-weight: 430;
   font-size: 16px;
   display: block;
+  /* color: #8ce99a; */
   color: #333333;
   word-wrap: break-word;
   font-family: Poppins;
@@ -231,9 +324,9 @@ link {
 
 .input-text {
   height: 30px;
-  width: 80%;
+  width: 99%;
   border-radius: 5px;
-  border: 1px #333333 solid;
+  border: 0px #333333 solid;
   padding: 4px 10px;
   color: #000000;
   align-items: center;
@@ -260,16 +353,15 @@ fieldset .campo .tituloDentroForm .input-text {
   width: 100%;
   height: 10vh;
   border-radius: 5px;
-  border: 1px #333333 solid;
   /* padding: 0 10px; */
   color: #000000;
   text-align: left;
+  margin-top: 10px;
 }
 
 button {
   font-family: inherit;
   font-size: 20px;
-  /* background: royalblue; */
   background: var(--colorIntermedio);
   color: white;
   padding: 0.7em 1em;
@@ -322,12 +414,12 @@ button:active {
 
 /* fin  */
 .boton {
-  width: 250px;
-  height: 50px;
-  background-color: var(--colorSecundario);
-  color: #333333;
+  width: 120px;
+  height: 35px;
+  background-color: #3c3c3b;
+  color: #fff;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   font-weight: 700;
   font-size: 20px;
   justify-content: flex-end;
@@ -340,9 +432,7 @@ button:active {
   height: 100%;
   padding: 5rem 10rem;
 }
-/* .sec-home{
-  height: 900px;
-} */
+
 .img-diseño {
   width: 800px;
   height: 100%;
@@ -357,8 +447,9 @@ button:active {
   align-content: center;
   justify-content: center;
   gap: 20px;
-  background-color: var(--colorSecundario);
+  background-color: #3c3c3b;
   text-align: initial;
+  border-radius: 9px;
 }
 
 #card1 {
@@ -370,7 +461,8 @@ button:active {
   align-content: center;
   justify-content: center;
   gap: 20px;
-  background-color: var(--colorSecundario);
+  background-color: #3c3c3b;
+  border-radius: 9px;
   text-align: initial;
   grid-area: card1;
 }
@@ -395,7 +487,8 @@ button:active {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 20px 10px;
+  margin-top: 30px;
+  /*margin: 20px 10px;*/
   margin-left: 30px;
 }
 
@@ -405,32 +498,18 @@ button:active {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 20px 50px;
+  margin: -10px 0px;
 }
 
 .Circ-nosDif {
-  background-color: var(--colorPrimario);
+  /* background-color: #3c3c3b; */
   margin-right: 20px;
 }
-/* .nosDiferencia-card .circulo{
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border-radius: 100px;
-  height: 73px;
-  width: 73px;
-  border: 2px red solid;
-} */
-.nosDiferencia-Parrafos img {
-  /* position:absolute;
-  top: 15px;
-  left:  10px; */
 
-  /* margin-left: auto; */
+.nosDiferencia-Parrafos img {
   margin: auto;
-  width: 43px;
-  height: 43px;
+  width: 60px;
+  height: 70px;
 }
 
 .nosDiferencia-Img {
@@ -441,20 +520,6 @@ button:active {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* .card-nosDiferencia {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: flex-start;
-  margin-top: 30px;
-}
-
-.card-nosDiferencia img {
-  width: 70px;
-  height: 70px;
-  margin-right: 20px;
-} */
 
 .card-soporte {
   display: grid;
@@ -470,7 +535,7 @@ button:active {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 0 6em;
 }
@@ -501,7 +566,7 @@ button:active {
 .circuloContenedor {
   width: 100%;
   height: 90%;
-  /* background-color: aquamarine; */
+
   display: flex;
   flex-direction: row;
 }
@@ -516,15 +581,6 @@ button:active {
   height: 100%;
 }
 
-/* .circuloUno {
-  width: 600px;
-  height: 600px;
-  background-color: #36a0d7;
-  border-radius: 50%;
-  position: absolute;
-  margin: 10%;
-  opacity: 0.8;
-} */
 .circuloDos {
   width: 200px;
   height: 200px;
@@ -547,29 +603,33 @@ button:active {
 }
 
 .textCirculos .textoUno {
-  margin-top: 20px;
+  margin-top: 0px;
+  color: #333333;
+  text-align: left;
 }
 
 .footer {
   width: 100%;
   height: auto;
-  background-color: var(--colorIntermedio);
+  background-color: #3c3c3b;
   box-sizing: border-box;
   padding: 3% 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
+  color: #fff;
 }
 
 .enorme-footer {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 33% 33% 25%;
   grid-template-rows: 50 auto 20rem;
   column-gap: 5rem;
-  color: #333333;
+  color: #fff;
 }
 
 .colum h4 {
@@ -584,6 +644,7 @@ button:active {
   line-height: 1.2;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .colum .contenido {
@@ -604,7 +665,7 @@ button:active {
   width: 70px;
   height: 70px;
   margin: 5px 5px;
-  color: black;
+  color: #fff;
 }
 .redes-sociales img {
   width: 50px;
@@ -619,7 +680,7 @@ button:active {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  color: black;
+  color: #fff;
   font-size: 12px;
 }
 .redesSociales-footer p {
@@ -634,13 +695,13 @@ button:active {
   align-items: center;
   align-content: center;
   line-height: 1.5;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .ubicacion img {
-  width: 40px;
-  height: 40px;
-  margin-right: 17px;
+  width: 35px;
+  height: 35px;
+  margin-right: 22px;
 }
 
 .whatsapp {
@@ -650,7 +711,7 @@ button:active {
   justify-content: start;
   align-items: center;
   align-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .whatsapp img {
@@ -668,13 +729,13 @@ button:active {
   align-content: center;
   cursor: pointer;
   line-height: 1.5;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .email img {
   width: 40px;
   height: 40px;
-  margin-right: 15px;
+  margin-right: 17px;
 }
 
 #mapaEspecifico {
@@ -697,7 +758,7 @@ button:active {
 .contenido-copy {
   width: 100%;
   text-align: center;
-  color: black;
+  color: #fff;
   font-size: 12px;
   display: flex;
   flex-direction: row;
@@ -729,12 +790,14 @@ button:active {
 }
 
 #carrusel h2 {
-  margin-bottom: 40px;
+  margin-bottom: -115px;
   padding: 0px 5px;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
+  /* margin-top: 400px; */
 }
+
 .center {
   text-align: center;
 }
@@ -746,15 +809,18 @@ button:active {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+
 ul {
   margin: 0px;
   padding: 0%;
+  margin-top: -120px;
 }
 
 .one-time {
   width: 100%;
   height: 300px;
 }
+
 .one-time li {
   width: 100%;
   height: 300px;
@@ -764,6 +830,7 @@ ul {
   width: 100%;
   height: 300px;
 }
+
 .slick-next,
 .slick-arrow::before {
   display: none;
@@ -772,7 +839,17 @@ ul {
 .margen {
   margin-left: 10%;
 }
+
 @media (max-width: 5000px) {
+  .formulario-Secc {
+    height: auto;
+    padding: 20px 16px;
+    color: #fff;
+    height: 100%;
+    width: 96%;
+    /* right: 30px; */
+  }
+
   .circuloContenedor {
     width: 100%;
     height: 1000px;
@@ -782,20 +859,23 @@ ul {
     height: 100%;
     padding: 0 0 0 0;
   }
-
-  /* .img-header {
-    width: 40%;
-    height: 100%;
-    position: relative;
-  } */
-
-  /* .img-diseño {
-    width: 730px;
-    height: 100%;
-    margin-top: -99px;
-    right: 0px; */
 }
 @media (max-width: 2400px) {
+  .prueba {
+    width: 100%;
+    height: 100%;
+    /* padding: 5rem 5rem; */
+  }
+
+  .formulario-Secc {
+    height: auto;
+    padding: 40px 40px;
+    color: #fff;
+    height: 100%;
+    width: 80%;
+    right: 80px;
+  }
+
   .nuestraPlataforma {
     width: 100%;
     height: 900px;
@@ -807,28 +887,38 @@ ul {
 }
 
 @media (max-width: 1400px) {
-  /* .home {
+  .u-header .u-logo-image-1 {
+    width: 635%;
     height: 100%;
-  } */
+    margin-top: 10px;
+    margin-left: -7px;
+  }
 
-  /* .img-header {
+  .prueba {
     width: 100%;
     height: 100%;
+    padding: 5rem 5rem;
+  }
 
-  } */
-  /* .sec-home{
-    height: 900px;
-  } */
+  .formulario-Secc {
+    height: auto;
+    padding: 20px 16px;
+    color: #fff;
+    height: 100%;
+    width: 96%;
+    /* right: 30px; */
+  }
+
   .img-diseño {
     position: relative;
     width: 100%;
     height: 100%;
-    left: 0px;
+    left: 0;
   }
 
   #nuestraPlataforma {
     padding: 10px 0px 30px 0px;
-    height: 100%;
+    /* height: 100%; */
   }
 
   .nosDirefencia-Text {
@@ -838,20 +928,14 @@ ul {
   }
 
   .card-home {
-    /* width: 60%; */
     height: 100%;
     padding: 4% 10%;
-
-    /* tenia un margen de 6 rem antes */
-  }
-
-  .formulario-Secc {
-    padding: 30px 70px;
   }
 
   .one-time {
     width: 100%;
     height: 250px;
+    padding-top: 20px;
   }
   .one-time li {
     width: 30%;
@@ -863,20 +947,22 @@ ul {
     height: 250px;
   }
   /*Moficiacion del optimizar procesos */
+
+  .circuloContenedor {
+    width: 100%;
+    height: 590px;
+  }
+
   .circuloText {
     height: auto;
-    width: 54%;
+    width: 50%;
     padding: 0px 50px;
   }
-  .circuloContenedor {
-    height: 450px;
-  }
+
   .circuloText h2 {
     text-align: center;
   }
   #formulario-Seccc {
-    /* background-color: rgba(128, 128, 128, 0.267); */
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -892,7 +978,7 @@ ul {
   .footer {
     width: 100%;
     height: auto;
-    background-color: var(--colorPrimario);
+    background-color: #3c3c3b;
     box-sizing: border-box;
     padding: 5%;
     display: flex;
@@ -908,13 +994,12 @@ ul {
     grid-template-columns: 33% 30% 20%;
     grid-template-rows: 50 auto 20rem;
     column-gap: 4rem;
-    color: black;
+    color: #fff;
   }
   #mapaEspecifico {
     height: 300px;
     width: 100%;
     margin-top: 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -924,26 +1009,189 @@ ul {
   }
 }
 
+@media (max-width: 1199px) {
+  .u-header .u-logo-image-1 {
+    width: 635%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: -115px;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .card-home {
+    height: 100%;
+    padding: 3% 0%;
+  }
+
+  .formulario-Secc {
+    padding: 0px 20px;
+    right: -20px;
+  }
+
+  .boton {
+    margin-bottom: 15px;
+  }
+
+  .prueba {
+    width: 100%;
+    height: 100%;
+    padding: 5rem 4rem;
+  }
+
+  .circulos img {
+    width: 100%;
+    height: 92%;
+  }
+
+  #carrusel {
+    width: 100%;
+    height: auto;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+  }
+
+  #carrusel h2 {
+    margin-bottom: -80px;
+    padding: 0px 5px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 @media (max-width: 1100px) {
+  .u-header .u-logo-image-1 {
+    width: 635%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: -33px;
+  }
+
   .card-home {
     height: 100%;
     padding: 3% 8%;
   }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .formulario-Secc {
+    height: auto;
+    padding: 20px 16px;
+    color: #fff;
+    height: 100%;
+    width: 96%;
+    right: -20px;
+  }
+
   .prueba {
     padding: 0 0;
+  }
+
+  .circuloContenedor {
+    width: 100%;
+    height: 520px;
+  }
+
+  #titulo {
+    color: var(--colorTerciario);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 33px;
   }
 }
 
 @media (max-width: 1024px) {
+  .btn-wsp {
+    display: block !important;
+  }
+
+  .btn-wsp-escritorio {
+    display: none !important;
+  }
+
+  .u-header .u-logo-image-1 {
+    width: 635%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: -40px;
+  }
+
   .card-home {
     height: 100%;
-    padding: 3% 6%;
+    padding: 3% 7%;
+  }
+
+  .formulario-Secc {
+    height: 100%;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    color: #000000;
+    right: -20px;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 12px;
+    padding: 33px 33px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #sumamos {
+    height: 50em;
+  }
+  #sumamos1 {
+    height: 50em;
+  }
+
+  .enorme-footer {
+    grid-template-columns: 31% 32% 26%;
+  }
+
+  .circuloContenedor {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .formulario-Secc {
+    padding: 20px 16px;
+    color: #fff;
+    height: 100%;
+    width: 96%;
+    /* right: 0px !important; */
   }
 }
 
 @media (max-width: 880px) {
+  .u-header .u-logo-image-1 {
+    width: 550%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: -60px;
+  }
+
   .prueba {
     width: 100%;
+  }
+
+  .formulario-Secc {
+    padding: 20px 16px;
+    color: #fff;
+    height: 100%;
+    width: 94%;
+    right: 0px !important;
+  }
+
+  .contenedor-campos {
+    display: block;
+    text-align: center;
   }
 
   .img-header {
@@ -984,18 +1232,15 @@ ul {
 
   .home {
     flex-direction: column;
-    /* height: 100%; */
+    align-items: center;
   }
 
   .img-header {
     width: 100%;
     height: 700px;
     padding: 0px 0 80px 0;
-    /* padding: 2rem; */
   }
-  /* .sec-home{
-    height: 900px;
-  } */
+
   .img-diseño {
     width: 100%;
     height: 50%;
@@ -1020,7 +1265,7 @@ ul {
 
   #nuestraPlataforma {
     padding: 10px 0px 30px 0px;
-    height: 100%;
+    /* height: 100%; */
   }
   /* NOS DIREFENCIA */
   .nosDiferencia {
@@ -1044,21 +1289,18 @@ ul {
 
   .nosDiferencia-Parrafos img {
     margin: auto;
-    width: 43px;
-    height: 43px;
+    width: 60px;
+    height: 60px;
   }
-  /* .nosDiferencia-Img {
-    width: 100%;
-    height: 700px;
-  } */
+
   /* FIN NOS DIREFENCIA */
 
   /* SUMAMOS */
   #sumamos {
-    height: 100%;
-    padding: 0px;
-    background-position: bottom;
-    background-size: auto;
+    height: 65em;
+  }
+  #sumamos1 {
+    height: 65em;
   }
 
   /* NUESTRA PLATAFORMA TIENE*/
@@ -1098,7 +1340,6 @@ ul {
   .circulos {
     height: 100%;
     width: 100%;
-    padding: 10%;
   }
 
   .circuloUno {
@@ -1119,18 +1360,6 @@ ul {
 
   .testimonios {
     height: 1200px;
-  }
-
-  #carrusel {
-    padding-top: 30px;
-  }
-
-  /* FORMULARIO  */
-  .formulario-Secc {
-    height: auto;
-    padding: 20px 25px;
-    color: #fff;
-    height: 100%;
   }
 
   .formulario {
@@ -1187,17 +1416,30 @@ ul {
     line-height: 2;
   }
 
-  #sumamos {
-    background-image: url("../Imagenes/imagen\ sumamos.jpg");
+  #carrusel {
+    width: 100%;
     height: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    /* height: 81em; */
+    margin-bottom: 80px;
+    margin-top: -50px;
+  }
+
+  #carrusel h2 {
+    margin-bottom: -40px;
+    padding: 0px 5px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
 @media (max-width: 780px) {
+  .u-header .u-logo-image-1 {
+    width: 500%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: -50px;
+  }
+
   #titulo {
     font-size: 28px;
   }
@@ -1248,20 +1490,6 @@ ul {
   .textCirculos p {
     font-size: 1rem;
   }
-  /*.one-time {
-        width: 100%;
-        height: 250px;
-    }
-
-        .one-time li {
-            width: 30%;
-            height: 250px;
-        }
-
-        .one-time img {
-            width: 100%;
-            height: 250px;
-        }*/
 
   .logo {
     height: auto;
@@ -1284,12 +1512,10 @@ ul {
     height: 350px;
   }
   #sumamos {
-    background-image: url("../Imagenes/imagen\ sumamos.jpg");
-    height: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
+    height: 65em;
+  }
+  #sumamos1 {
+    height: 65em;
   }
   .nosDiferencia-Parrafos img {
     margin: auto;
@@ -1298,7 +1524,84 @@ ul {
   }
 }
 
+@media (max-width: 767px) {
+  .u-section-2 .u-text-3 {
+    margin-left: 0;
+    font-size: 0.875rem;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 600px) {
+  .u-header .u-logo-image-1 {
+    width: 400%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: -35px;
+  }
+
+  .u-section-2 .u-text-3 {
+    margin-left: 0;
+    font-size: 0.875rem;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  #carrusel {
+    padding-top: 0px;
+  }
+
+  .boton {
+    width: 120px;
+    height: 35px;
+    background-color: #3c3c3b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  @media (max-width: 570px) {
+    #sumamos {
+      height: 114em;
+    }
+    #sumamos1 {
+      height: 114em;
+    }
+
+    #carrusel {
+      padding-top: 0px;
+    }
+  }
+
+  .formulario-Secc {
+    height: auto;
+    padding: 20px 16px;
+    color: #fff;
+    height: 100%;
+    width: 94%;
+    /* right: 30px; */
+  }
+
+  .campo label {
+    color: var(--blanco);
+    font-weight: 430;
+    /* font-size: 11px; */
+    display: block;
+    /* color: #8ce99a; */
+    color: #333333;
+    word-wrap: break-word;
+    font-family: Poppins;
+    line-height: 2;
+    margin-top: 10px;
+  }
+
   .nuestraPlataformaTiene {
     height: 750px;
   }
@@ -1306,138 +1609,256 @@ ul {
     height: 1000px;
   }
 
-  #sumamos {
-    background-image: url("../Imagenes/imagen\ sumamos.jpg");
-    height: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 80.7em;
+  #titulo1 {
+    font-size: 30px;
   }
 
-  #sumamos1 {
-    background-color: rgba(245, 241, 241, 0.24);
-    height: auto;
-    padding: 50px 0px 60px 0px;
-    padding: 00px 0px 30px 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 80em;
+  /* #sumamos {
+  height: 112em;
+}
+#sumamos1 {
+  height: 112em;
+} */
+
+  @media (max-width: 480px) {
+    .u-header .u-logo-image-1 {
+      width: 400%;
+      height: 100%;
+      margin-top: 10px;
+      margin-left: -20px;
+    }
+
+    .titulo-home {
+      font-size: 0.8rem;
+    }
+
+    .nuestraPlataforma {
+      height: 850px;
+    }
+    .nosDirefencia-Text {
+      padding: 2rem 1rem;
+    }
+
+    .nuestraPlataformaTiene {
+      height: 780px;
+      padding: 30px 25px;
+    }
+    .circuloContenedor {
+      height: auto;
+    }
+
+    .circuloUno {
+      height: 70%;
+    }
+    .circuloDos {
+      height: 28%;
+    }
+    .circuloImg {
+      height: 60%;
+    }
+
+    /* fin nuestra plataforma */
+    .sec-home {
+      height: 850px;
+    }
+    .contenedor-campos {
+      display: block;
+    }
+    .card-soporte {
+      display: block;
+    }
+    .footer {
+      display: block;
+    }
+    .enorme-footer {
+      display: block;
+    }
+
+    .contenido-copy {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+      line-height: 2;
+      text-align: initial;
+    }
+    .copy-text-2 {
+      margin-left: 0px;
+    }
+
+    #carousel_cddb {
+      height: 1000px;
+    }
+    .one-time {
+      width: 100%;
+      height: 300px;
+    }
+
+    .one-time li {
+      width: 30%;
+      height: 300px;
+    }
+
+    .one-time img {
+      width: 100%;
+      height: 300px;
+    }
+
+    .img-header {
+      width: 100%;
+      height: 700px;
+      padding: 0px 0 80px 0;
+    }
+
+    .formulario-Secc {
+      height: auto;
+      padding: 20px 16px;
+      color: #fff;
+      height: 100%;
+      width: 96%;
+      right: 0px;
+    }
+
+    .campo label {
+      color: var(--blanco);
+      font-weight: 430;
+      font-size: 11px;
+      display: block;
+      /* color: #8ce99a; */
+      color: #333333;
+      word-wrap: break-word;
+      font-family: Poppins;
+      line-height: 2;
+      margin-top: 10px;
+    }
+
+    #txtDescripcion {
+      width: 100%;
+      height: 10vh;
+      border-radius: 5px;
+      /* padding: 0 10px; */
+      color: #000000;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .contenedor-campos {
+      display: block;
+      text-align: center;
+    }
+
+    .u-header .u-logo-image-1 {
+      width: 400%;
+      height: 100%;
+      margin-top: 10px;
+      margin-left: -12px;
+    }
+
+    #carrusel {
+      padding-top: 0px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .nuestraPlataformaTiene {
+      height: 780px;
+    }
+
+    .formulario-Secc {
+      height: auto;
+      padding: 20px 16px;
+      color: #fff;
+      height: 100%;
+      width: 95%;
+      right: 0px;
+    }
+
+    .campo label {
+      color: var(--blanco);
+      font-weight: 430;
+      font-size: 11px;
+      display: block;
+      /* color: #8ce99a; */
+      color: #333333;
+      word-wrap: break-word;
+      font-family: Poppins;
+      line-height: 2;
+      margin-top: 10px;
+    }
+
+    #txtDescripcion {
+      width: 100%;
+      height: 10vh;
+      border-radius: 5px;
+      /* padding: 0 10px; */
+      color: #000000;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .contenedor-campos {
+      display: block;
+      text-align: center;
+    }
+
+    .u-header .u-logo-image-1 {
+      width: 400%;
+      height: 100%;
+      margin-top: 10px;
+      margin-left: -12px;
+    }
+
+    #carrusel {
+      padding-top: 0px;
+    }
+  }
+
+  #panel_control {
+    padding-top: 5px;
+  }
+
+  .footer-color-letras {
+    color: #fff;
+  }
+
+  .logo-footer-goodapps {
+    width: 150px;
+    height: 150px;
+    margin-bottom: -70px;
+    margin-top: -30px;
+  }
+
+  .direccion {
+    color: #fff;
+  }
+
+  .link-footer {
+    color: #fff !important;
   }
 }
 
-@media (max-width: 480px) {
-  .nuestraPlataforma {
-    height: 850px;
-  }
-  .nosDirefencia-Text {
-    padding: 2rem 1rem;
-  }
-
-  .nuestraPlataformaTiene {
-    height: 780px;
-    padding: 30px 25px;
-  }
-  .circuloContenedor {
-    height: auto;
-  }
-
-  .circuloUno {
-    height: 70%;
-  }
-  .circuloDos {
-    height: 28%;
-  }
-  .circuloImg {
-    height: 60%;
-  }
-
-  /* fin nuestra plataforma */
-  .sec-home {
-    height: 850px;
-  }
-  .contenedor-campos {
-    display: block;
-  }
-  .card-soporte {
-    display: block;
-  }
-  .footer {
-    display: block;
-  }
-  .enorme-footer {
-    display: block;
-  }
-
-  .contenido-copy {
-    width: auto;
-    /* padding: 0px 20px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    line-height: 2;
-    text-align: initial;
-  }
-  .copy-text-2 {
-    margin-left: 0px;
-  }
-  /* .one-time img {
-    width: 100%;
-    height: 250px;
-    margin: 0px;
-  } */
-  #carousel_cddb {
-    height: 1000px;
-  }
-  .one-time {
-    width: 100%;
-    height: 300px;
-  }
-
-  .one-time li {
-    width: 30%;
-    height: 300px;
-  }
-
-  .one-time img {
-    width: 100%;
-    height: 300px;
-  }
-  #sumamos {
-    background-image: url("../Imagenes/imagen\ sumamos.jpg");
-    height: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 1400px;
-  }
-
-  #sumamos1 {
-    background-color: rgba(245, 241, 241, 0.24);
-    height: auto;
-    padding: 50px 0px 60px 0px;
-    padding: 00px 0px 30px 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 87.5em;
-  }
-  .img-header {
-    width: 100%;
-    height: 700px;
-    padding: 0px 0 80px 0;
-  }
+.btn-wsp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  display: none;
 }
 
-@media (max-width: 400px) {
-  .nuestraPlataformaTiene {
-    height: 780px;
-  }
+.btn-wsp-escritorio {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  z-index: 100;
 }
 
-#panel_control {
-  padding-top: 5px;
-}
+/* .btn-wsp:hover {
+  text-decoration: none;
+  color: #0df054;
+  background-color: #16bd2c;
+  transition: all 0.3s;
+} */

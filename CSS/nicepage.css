@@ -461,7 +461,7 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
   max-width: calc(100% - 5px);
 }
 /*end-commonstyles library*/
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -25199,8 +25199,8 @@ a.u-link.u-hover-palette-3-light-3:hover {
 .u-container-style.u-palette-3-base:before,
 .u-container-layout.u-container-layout.u-palette-3-base:before,
 .u-table-alt-palette-3-base tr:nth-child(even) {
-  color: #111111;
-  background-color: #333333;
+  /* color: #111111;
+  background-color: #333333; */
 }
 .u-button-style.u-palette-3-base,
 .u-button-style.u-palette-3-base[class*="u-border-"] {
@@ -37673,7 +37673,7 @@ blockquote {
 .u-grey a,
 .u-shading a,
 .u-overlap-contrast .u-header a:not(.u-nav-link):not(.u-btn) {
-  color: #adcce9;
+  color: #fff;
 }
 .u-body-color a:hover,
 .u-palette-1-base a:hover,
@@ -37858,9 +37858,10 @@ blockquote {
 }
 
 .u-header .u-logo-image-1 {
-  width: 300%;
+  width: 635%;
   height: 100%;
   margin-top: 10px;
+  margin-left: -69px;
 }
 
 .u-header .u-menu-1 {
