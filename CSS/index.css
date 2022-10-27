@@ -104,9 +104,9 @@ h1 {
 
   padding: 30px 30px;
 }
-.iconos-elegirnos{
-width: 60px;
-height: 60px;
+.iconos-elegirnos {
+  width: 60px;
+  height: 60px;
 }
 
 #sumamos {
@@ -176,8 +176,6 @@ height: 60px;
   /* background-size: 100%; */
   background-repeat: no-repeat;
   background-position: center;
-
-  
 }
 
 .card-home {
@@ -628,7 +626,7 @@ button:active {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 33% 33% 25%;
   grid-template-rows: 50 auto 20rem;
   column-gap: 5rem;
   color: #fff;
@@ -797,7 +795,7 @@ button:active {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 400px;
+  /* margin-top: 400px; */
 }
 
 .center {
@@ -987,7 +985,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 
   .enorme-footer {
@@ -1049,7 +1046,7 @@ ul {
     height: 92%;
   }
 
-  #carrusel{
+  #carrusel {
     width: 100%;
     height: auto;
     /* margin-top: 50px; */
@@ -1062,7 +1059,7 @@ ul {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-}
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1109,7 +1106,6 @@ ul {
 }
 
 @media (max-width: 1024px) {
-
   .btn-wsp {
     display: block !important;
   }
@@ -1131,7 +1127,8 @@ ul {
   }
 
   .formulario-Secc {
-    width: 48%;
+    height: 100%;
+    width: 96%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1146,10 +1143,10 @@ ul {
   }
 
   #sumamos {
-    height: 65em;
+    height: 50em;
   }
   #sumamos1 {
-    height: 65em;
+    height: 50em;
   }
 
   .enorme-footer {
@@ -1164,7 +1161,6 @@ ul {
 
 @media (max-width: 991px) {
   .formulario-Secc {
-    height: auto;
     padding: 20px 16px;
     color: #fff;
     height: 100%;
@@ -1186,7 +1182,6 @@ ul {
   }
 
   .formulario-Secc {
-    height: auto;
     padding: 20px 16px;
     color: #fff;
     height: 100%;
@@ -1421,21 +1416,20 @@ ul {
     line-height: 2;
   }
 
-  #carrusel{
+  #carrusel {
     width: 100%;
     height: auto;
     margin-bottom: 80px;
     margin-top: -50px;
   }
-  
+
   #carrusel h2 {
     margin-bottom: -40px;
     padding: 0px 5px;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-}
-
+  }
 }
 
 @media (max-width: 780px) {
@@ -1765,7 +1759,6 @@ ul {
     #carrusel {
       padding-top: 0px;
     }
-    
   }
 
   @media (max-width: 400px) {
