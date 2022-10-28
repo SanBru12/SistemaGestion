@@ -24,9 +24,8 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-  /* color: #fff; */
-  color: black;
-}
+  color: #fff;
+  }
 
 link {
   text-decoration: none;
@@ -62,7 +61,7 @@ h1 {
   text-align: left;
 }
 
-.letras-portada {
+.letras-portada1 {
   font-style: italic;
 }
 
@@ -90,6 +89,11 @@ h1 {
   font-weight: bold;
   font-size: 16px;
 }
+
+#texto-sitodos{
+  font-size: 24px;
+}
+
 /**/
 
 #nuestraPlataforma {
@@ -211,8 +215,8 @@ h1 {
   background-color: rgba(255, 255, 255, 0.658);
   border-radius: 12px;
   padding: 33px 33px;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 #formulario-Seccc p,
 #formulario-Seccc h2,
@@ -273,7 +277,7 @@ h1 {
 .tituloDentroForm {
   display: block;
   font-weight: bold;
-  margin-top: 40px;
+  margin-top: 25px;
 
   text-align: left;
 }
@@ -430,7 +434,7 @@ button:active {
 .prueba {
   width: 60%;
   height: 100%;
-  padding: 5rem 10rem;
+  padding: 3rem 10rem;
 }
 
 .img-diseño {
@@ -730,6 +734,7 @@ button:active {
   cursor: pointer;
   line-height: 1.5;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .email img {
@@ -741,7 +746,7 @@ button:active {
 #mapaEspecifico {
   height: 300px;
   width: 300px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   position: relative;
   left: 0px;
   display: flex;
@@ -786,7 +791,7 @@ button:active {
 #carrusel {
   width: 100%;
   height: auto;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 #carrusel h2 {
@@ -865,6 +870,7 @@ ul {
     width: 100%;
     height: 100%;
     /* padding: 5rem 5rem; */
+    left: -60px;
   }
 
   .formulario-Secc {
@@ -873,7 +879,7 @@ ul {
     color: #fff;
     height: 100%;
     width: 80%;
-    right: 80px;
+    right: 120px;
   }
 
   .nuestraPlataforma {
@@ -883,6 +889,9 @@ ul {
   .circuloContenedor {
     width: 100%;
     height: 700px;
+  }
+  .unproducto{
+    margin-bottom: 20px;
   }
 }
 
@@ -894,6 +903,10 @@ ul {
     margin-left: -7px;
   }
 
+  #texto-sitodos {
+    font-size: 20px;
+}
+
   .prueba {
     width: 100%;
     height: 100%;
@@ -902,10 +915,10 @@ ul {
 
   .formulario-Secc {
     height: auto;
-    padding: 20px 16px;
+    padding: 40px 40px;
     color: #fff;
     height: 100%;
-    width: 96%;
+    width: 80%;
     /* right: 30px; */
   }
 
@@ -999,7 +1012,6 @@ ul {
   #mapaEspecifico {
     height: 300px;
     width: 100%;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1039,10 +1051,11 @@ ul {
     width: 100%;
     height: 100%;
     padding: 5rem 4rem;
+    left: 0px;
   }
 
   .circulos img {
-    width: 100%;
+    width: 102%;
     height: 92%;
   }
 
@@ -1143,10 +1156,11 @@ ul {
   }
 
   #sumamos {
-    height: 50em;
+    height: 55em;
   }
+
   #sumamos1 {
-    height: 50em;
+    height: 55em;
   }
 
   .enorme-footer {
@@ -1154,8 +1168,8 @@ ul {
   }
 
   .circuloContenedor {
-    width: 100%;
-    height: 500px;
+    width: 98%;
+    height: 470px;
   }
 }
 
@@ -1166,6 +1180,14 @@ ul {
     height: 100%;
     width: 96%;
     /* right: 0px !important; */
+  }
+
+  #sumamos {
+    height: 66em;
+  }
+
+  #sumamos1 {
+    height: 66em;
   }
 }
 
@@ -1228,6 +1250,7 @@ ul {
 
   #titulo {
     font-size: 30px;
+    margin-right: 40px;
   }
 
   .home {
@@ -1306,7 +1329,7 @@ ul {
   /* NUESTRA PLATAFORMA TIENE*/
   .nuestraPlataformaTiene {
     height: 1000px;
-    padding: 30px 25px;
+    padding: 30px 0px;
   }
   .circuloContenedor {
     height: auto;
@@ -1317,6 +1340,7 @@ ul {
     height: auto;
     width: 100%;
     padding: 0px 50px;
+    margin-left: 25px;
   }
 
   .circuloText h2 {
@@ -1325,6 +1349,8 @@ ul {
   .textCirculos {
     display: flex;
     flex-direction: row;
+    padding-right: 40px;
+    margin-left: 13px;
   }
 
   .textCirculos p {
@@ -1641,7 +1667,7 @@ ul {
 
     .nuestraPlataformaTiene {
       height: 780px;
-      padding: 30px 25px;
+      padding: 30px 0px;
     }
     .circuloContenedor {
       height: auto;
